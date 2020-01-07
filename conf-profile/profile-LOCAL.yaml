@@ -2,8 +2,8 @@ spring:
   couchbase:
     bootstrap-hosts: 127.0.0.1
     bucket:
-    name: profile
-    password: password
+      name: profile
+      password: password
   data:
     couchbase:
       auto-index: true
