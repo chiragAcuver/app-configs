@@ -2,17 +2,20 @@ spring:
   couchbase:
     bootstrap-hosts: 127.0.0.1
     bucket:
-      name: profile
+      name: contact-bucket
       password: password
   data:
     couchbase:
       auto-index: true
 
   application:
-    name: profile
+    name: identity
 eureka:
   client:
     service-url:
       defaultZone: http://localhost:8888/eureka/
 server:
-  port: 1199
+  port: 1099
+
+jwt:
+  secret: UNSECURE_SECRET_TOKEN
