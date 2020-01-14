@@ -16,3 +16,8 @@ spring:
       #defaultZone: http://localhost:8888/eureka/
 server:
   port: 1199
+
+api:
+  identity: 
+    service-host: localhost:1099
+    sign-up-endpoint: /contacts  
