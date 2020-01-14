@@ -10,12 +10,17 @@ spring:
 
   application:
     name: identity
-eureka:
-  client:
-    service-url:
-      defaultZone: http://localhost:8888/eureka/
+#eureka:
+  #client:
+    #service-url:
+      #defaultZone: http://localhost:8888/eureka/
 server:
   port: 1099
 
 jwt:
   secret: UNSECURE_SECRET_TOKEN
+
+api:
+  identity: 
+    service-host: localhost:1099
+    sign-up-endpoint: /contacts  
